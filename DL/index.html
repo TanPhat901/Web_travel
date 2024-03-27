@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="body">
+        <div class="part-slide">
+            <div class="container">
+                <div class="slide"> 
+                    <div class="item"
+                    style="background-image: url(https://www.elle.vn/wp-content/uploads/2021/03/11/427109/5-hinh-anh-dep-vuon-Hallebos-Rove-1024x683.jpg);">
+                        <div class="content">
+                            <div class="name">RỪNG HOA CHUÔNG HALLERBOS, BỈ</div>
+                            <div class="des">Description of the photo</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                    style="background-image: url(https://www.elle.vn/wp-content/uploads/2021/03/11/427109/4-hinh-anh-dep-Capadocia-Daniela-Cuevas-1024x683.jpg);">
+                        <div class="content">
+                            <div class="name">CAPPADOCIA, THỔ NHĨ KỲ</div>
+                            <div class="des">Description of the photo</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                    style="background-image: url(https://www.elle.vn/wp-content/uploads/2021/03/11/427109/3-hinh-anh-dep-dao-Vagar-Faroe-Sebastian-Boring-1024x576.jpg);">
+                        <div class="content">
+                            <div class="name">ĐẢO VÁGAR THUỘC QUẦN ĐẢO FAROE</div>
+                            <div class="des">Description of the photo</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                    style="background-image: url(https://www.elle.vn/wp-content/uploads/2021/03/11/427109/1-hinh-anh-dep-thac-seljalandsfoss-Iceland-Photo-Tours-1024x687.jpg);">
+                        <div class="content">
+                            <div class="name">MIỀN NAM ICELAND</div>
+                            <div class="des">Description of the photo</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                    style="background-image: url(https://www.elle.vn/wp-content/uploads/2021/03/11/427109/7-hinh-anh-dep-Meteora-George-Tasios-1024x683.jpg);">
+                        <div class="content">
+                            <div class="name">METEORA, HY LẠP</div>
+                            <div class="des">Description of the photo</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                    <div class="item"
+                    style="background-image: url(https://www.elle.vn/wp-content/uploads/2021/03/11/427109/hinh-anh-dep-cua-cac-dia-diem-tren-the-gioi.jpg);">
+                        <div class="content">
+                            <div class="name">VƯỜN QUỐC GIA TRƯƠNG GIA GIỚI, TỈNH HỒ NAM, TRUNG QUỐC</div>
+                            <div class="des">Description of the photo</div>
+                            <button>See more</button>
+                        </div>
+                    </div>
+                   
+        
+                </div>
+                <div class="button">
+                    <button class="prev"> <i class="ti-arrow-left"></i></button>
+                    <button class="next"><i class="ti-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="part-content">
+            
+        </div>
+        
+    </div>
+    <div class="footer">
+
+    </div>
+   
+    <script>
+        const $next = document.querySelector('.next');
+        const $prev = document.querySelector('.prev');
+
+        $next.addEventListener (
+            'click',
+            () => {
+                const items = document.querySelectorAll('.item');
+                document.querySelector('.slide').
+                appendChild(items[0]);
+            },
+        );
+        $prev.addEventListener(
+            'click',
+            () => {
+                const items = document.querySelectorAll('.item');
+                document.querySelector('.slide').
+                prepend(items[items.length -1]);
+            },
+        );
+    </script>
+</body>
+</html>
+
